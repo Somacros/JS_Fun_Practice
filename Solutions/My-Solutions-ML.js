@@ -127,5 +127,17 @@ const maxRecurse = (...numbers) => {
 	return maxRecurse(...numbers);
 }
 
-/* 16.- 
+/* 16.- not(func) ⇒ function
+Write a function not that takes a function and 
+returns the negation of its result */
+
+const not = (x) => !x;
+const isOdd = x => x % 2 === 1;
+const isEven = (x) => not(isOdd(x));
+
+/* 17.- acc(func, initial) ⇒ function
+Write a function acc that takes a function and 
+an initial value and returns a function that runs 
+the initial function on each argument, accumulating 
+the result */
 
